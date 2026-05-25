@@ -10,7 +10,7 @@ export default function Footer() {
           <p>Follow us</p>
           <div className="flex items-center justify-center gap-4 sm:justify-start">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/casualharmonyru/"
               target="_blank"
               rel="noreferrer"
               className="text-white/70 transition hover:text-white"

@@ -1,14 +1,4 @@
-import { motion } from 'framer-motion'
 import { members } from '../data/members'
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.06, duration: 0.55, ease: 'easeOut' },
-  }),
-}
 
 export default function MembersGrid() {
   const sorted = [...members].sort((a, b) => (b.board === true ? 1 : 0) - (a.board === true ? 1 : 0))
@@ -30,13 +20,8 @@ export default function MembersGrid() {
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {sorted.map((member, index) => (
-            <motion.div
+            <div
               key={member.name}
-              custom={index}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
-              variants={cardVariants}
               className="group relative overflow-hidden rounded-none border border-white/10 bg-white/5 p-8 shadow-glow transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/10"
             >
               <div className="flex flex-col gap-6 md:flex-row md:items-center">
@@ -70,7 +55,7 @@ export default function MembersGrid() {
                   )}
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
