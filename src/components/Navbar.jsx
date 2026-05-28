@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import cas_logo_full from '../assets/images/cas_logo_full.png'
 
 const links = [
   { label: 'Home', to: '/' },
@@ -41,8 +42,11 @@ export default function Navbar() {
         }`}
       >
         <NavLink to="/" className="flex items-center gap-3 text-white">
-          <div className="flex h-10 w-10 items-center justify-center rounded-none border border-white/10 bg-black/60 shadow-glow">
-            <span className="text-lg font-bold tracking-wide">CH</span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-none ">
+            <img
+              src={cas_logo_full}
+              className="h-full w-full object-cover"
+            />
           </div>
           <span className="hidden font-semibold tracking-wide sm:inline">Casual Harmony</span>
         </NavLink>
