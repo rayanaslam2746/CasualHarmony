@@ -17,11 +17,11 @@ export default function AboutSection() {
               About Casual Harmony
             </h2>
             <p className="text-base leading-relaxed text-white/70">
-              Casual Harmony is Rutgers’ premier all‑male a cappella group, yipyap idk someone write ts
+              Casual Harmony is Rutgers University's premier tenor-bass A Cappella group. We have performed at a wide array of venues, from campus events to local festivals and even national stages. Founded in 2003, we showcase our vocal prowess through complex arrangements, powerful soloists, and intricate vocal percussion.
             </p>
             <p className="text-base leading-relaxed text-white/70">
               Follow our Instagram for the latest audition information, upcoming shows,
-              and behind-the-scenes moments.
+              and behind-the-scenes.
             </p>
           </div>
 

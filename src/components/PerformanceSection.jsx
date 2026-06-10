@@ -15,7 +15,7 @@ export default function PerformanceSection() {
             Featured Performance
           </h2>
           <p className="max-w-2xl text-base text-white/70">
-            hahahahahah
+            Watch our 2026 competition set!
           </p>
         </motion.div>
 
@@ -30,7 +30,7 @@ export default function PerformanceSection() {
             <div className="relative w-full pt-[56.25%]">
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&showinfo=0"
+                src="https://www.youtube.com/embed/6WL8p7lRkRw"
                 title="Casual Harmony Performance"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
