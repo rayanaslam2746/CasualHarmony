@@ -11,6 +11,9 @@ const paths = [
   'src/assets/images/gallery-3.png',
   'src/assets/images/gallery-4.png',
   'src/assets/images/gallery-5.png',
+  'src/assets/images/gallery-6.png',
+  'src/assets/images/gallery-7.png',
+  'src/assets/images/gallery-8.png',
 ];
 
 const members = [

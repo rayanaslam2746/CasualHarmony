@@ -17,7 +17,7 @@ export default function MembersGrid() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+                  className="absolute inset-0 h-full w-full object-cover object-top"
                 />
 
                 {/* Desktop: bottom gradient for legibility */}

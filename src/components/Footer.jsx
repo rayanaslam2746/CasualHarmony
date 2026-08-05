@@ -18,7 +18,7 @@ export default function Footer() {
               Instagram
             </a>
             <a
-              href="mailto:booking@casualharmony.com"
+              href="mailto:casualharmony@gmail.com"
               className="text-white/70 transition hover:text-white"
             >
               Email

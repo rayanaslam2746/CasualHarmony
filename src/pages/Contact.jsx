@@ -1,9 +1,9 @@
-import ContactForm from '../components/ContactForm'
+import ContactLinks from '../components/ContactLinks'
 
 export default function Contact() {
   return (
     <div className="min-h-screen">
-      <ContactForm />
+      <ContactLinks />
     </div>
   )
 }

@@ -87,11 +87,11 @@ export const members = [
 
   {
     name: 'Aidan',
-    voice: 'Tenor',
+    voice: 'Tenor 2',
     year: 'Junior',
-    major: 'idk',
-    minor: 'idk either',
-    funFact: 'Still figuring things out, and thriving.',
+    major: 'Music Composition',
+    minor: 'Japanese',
+    funFact: 'I wrote a string quartet!',
     board: false,
     role: '',
     image: image('aidan'),

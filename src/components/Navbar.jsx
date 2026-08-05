@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
 import cas_logo_full from '../assets/images/cas_logo_full.png'
 
 const links = [
   { label: 'Home', to: '/' },
   { label: 'Members', to: '/members' },
-  { label: 'Book Us', to: '/book' },
+  { label: 'Contact Us', to: '/contact' },
 ]
 
 export default function Navbar() {
@@ -31,13 +30,12 @@ export default function Navbar() {
     [],
   )
 
-  const linkClass =
-    'text-sm font-semibold tracking-wide text-white/80 hover:text-white transition-colors duration-200'
+  const linkClass = 'text-sm font-semibold tracking-wide text-white/80 hover:text-white'
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div
-        className={`mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 transition-colors duration-300 ${
+        className={`mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 ${
           scrolled ? 'bg-black/90 backdrop-blur' : 'bg-transparent'
         }`}
       >
@@ -93,35 +91,27 @@ export default function Navbar() {
         </button>
       </div>
 
-      <AnimatePresence>
-        {open ? (
-          <motion.nav
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="md:hidden"
-          >
-            <div className="mx-auto flex max-w-6xl flex-col gap-1 border-t border-white/10 bg-black/90 px-4 py-4 backdrop-blur">
-              {links.map((link) => (
-                <NavLink
-                  key={link.to}
-                  to={link.to}
-                  className={({ isActive }) =>
-                    `block rounded-none px-3 py-2 text-sm font-semibold tracking-wide transition-colors duration-200 ${
-                      isActive
-                        ? 'bg-white/10 text-white'
-                        : 'text-white/70 hover:text-white hover:bg-white/5'
-                    }`
-                  }
-                >
-                  {link.label}
-                </NavLink>
-              ))}
-            </div>
-          </motion.nav>
-        ) : null}
-      </AnimatePresence>
+      {open ? (
+        <nav className="md:hidden">
+          <div className="mx-auto flex max-w-6xl flex-col gap-1 border-t border-white/10 bg-black/90 px-4 py-4 backdrop-blur">
+            {links.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) =>
+                  `block rounded-none px-3 py-2 text-sm font-semibold tracking-wide ${
+                    isActive
+                      ? 'bg-white/10 text-white'
+                      : 'text-white/70 hover:text-white hover:bg-white/5'
+                  }`
+                }
+              >
+                {link.label}
+              </NavLink>
+            ))}
+          </div>
+        </nav>
+      ) : null}
     </header>
   )
 }
