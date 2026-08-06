@@ -87,7 +87,7 @@ export const members = [
 
   {
     name: 'Aidan',
-    voice: 'Tenor 2',
+    voice: 'Tenor',
     year: 'Junior',
     major: 'Music Composition',
     minor: 'Japanese',
