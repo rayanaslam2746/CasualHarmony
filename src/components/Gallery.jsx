@@ -2,10 +2,12 @@ import gallery1 from '../assets/images/gallery-1.png'
 import gallery2 from '../assets/images/gallery-2.png'
 import gallery3 from '../assets/images/gallery-3.png'
 import gallery4 from '../assets/images/gallery-4.png'
+import gallery5 from '../assets/images/gallery-5.png'
 import gallery6 from '../assets/images/gallery-6.png'
+import gallery7 from '../assets/images/gallery-7.png'
 import gallery8 from '../assets/images/gallery-8.png'
 
-const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery6, gallery8]
+const galleryImages = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8]
 
 export default function Gallery() {
   return (

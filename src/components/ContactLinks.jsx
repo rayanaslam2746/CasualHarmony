@@ -1,4 +1,4 @@
-import groupPhoto from '../assets/images/gallery-7.png'
+import contactPhoto from '../assets/images/Contact_pic.png'
 
 const links = [
   {
@@ -71,8 +71,8 @@ export default function ContactLinks() {
         <div className="mt-16 grid gap-6 lg:grid-cols-2">
           <div className="relative min-h-[320px] overflow-hidden rounded-none border border-white/10 bg-white/5 shadow-glow lg:min-h-full">
             <img
-              src={groupPhoto}
-              alt="Casual Harmony group photo"
+              src={contactPhoto}
+              alt="Casual Harmony"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
