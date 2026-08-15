@@ -1,4 +1,5 @@
-import heroBackground from '../assets/images/hero-bg.png'
+import { Link } from 'react-router-dom'
+import heroBackground from '../assets/images/hero-bg.jpg'
 
 export default function Hero() {
   return (
@@ -19,12 +20,12 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center justify-center rounded-none border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold tracking-wide text-white hover:bg-white/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
           >
             Contact Us
-          </a>
+          </Link>
           <a
             href="#performance"
             className="inline-flex items-center justify-center rounded-none border border-white/20 bg-black/40 px-6 py-3 text-sm font-semibold tracking-wide text-white hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"

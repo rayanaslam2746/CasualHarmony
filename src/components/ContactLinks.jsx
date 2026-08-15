@@ -52,6 +52,34 @@ const links = [
       </svg>
     ),
   },
+  {
+    label: 'YouTube',
+    handle: '@CasualHarmony',
+    href: 'https://www.youtube.com/@CasualHarmony',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 text-white">
+        <rect x="3" y="5.5" width="18" height="13" rx="3.5" stroke="currentColor" strokeWidth="1.6" />
+        <path d="M10.5 9.5v5l4.5-2.5-4.5-2.5Z" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Facebook',
+    handle: 'Casual Harmony',
+    href: 'https://www.facebook.com/profile.php?id=100063549032606',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 text-white">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" />
+        <path
+          d="M13.5 21v-6.5h2.2l.3-2.6h-2.5V10.2c0-.75.2-1.26 1.28-1.26h1.37V6.6c-.24-.03-1.05-.1-2-.1-1.98 0-3.33 1.2-3.33 3.42v1.98H8.5v2.6h2.32V21"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
 ]
 
 export default function ContactLinks() {
